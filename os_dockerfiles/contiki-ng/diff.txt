@@ -1,0 +1,18 @@
+
+=== contiki-ng/arch/cpu/cc2538/startup-gcc.c ===
+315,316c315,316
+<   //rom_util_memcpy(&_data, &_ldata, &_edata - &_data);
+<   memcpy(&_data, &_ldata, &_edata - &_data);
+---
+>   rom_util_memcpy(&_data, &_ldata, &_edata - &_data);
+>   //memcpy(&_data, &_ldata, &_edata - &_data);
+319,320c319,320
+<   //rom_util_memset(&_bss, 0, &_ebss - &_bss);
+<   memset(&_bss, 0, &_ebss - &_bss);
+---
+>   rom_util_memset(&_bss, 0, &_ebss - &_bss);
+>   //memset(&_bss, 0, &_ebss - &_bss);
+
+
+
+

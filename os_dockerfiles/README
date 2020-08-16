@@ -1,0 +1,21 @@
+There is a folder for each operating system. Each folder contain a Dockerfile and a conf.yml file.
+
+
+
+Example for conf.yml
+
+app_search:
+  file_name: 
+    Makefile
+    Makefile.target
+  cmd: make
+
+new_url: https://github.com/contiki-ng/contiki-ng.git
+
+
+
+conf.yml file has 
+-file_name: the name of files to be search for to identify the applications directory. 
+-cmd: the build command which will be excuted in the application directory.
+-new_url: the url to the new version of the operating system.
+

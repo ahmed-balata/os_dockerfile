@@ -1,0 +1,5 @@
+app_search:
+  file_name: 
+    prj.conf
+    sample.yaml
+  cmd: /root/.local/bin/west build -c -b reel_board . --build-dir ./build

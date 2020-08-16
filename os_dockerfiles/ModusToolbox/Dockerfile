@@ -1,0 +1,17 @@
+FROM ubuntu:xenial
+
+MAINTAINER Ahmed Balata
+
+# Setup
+RUN apt-get update && apt-get install -y \
+            make \
+            python-pip \
+	    python-serial \
+            automake \
+            sudo
+
+
+#install arm-gcc
+RUN sudo apt-get update -y && \
+	sudo apt-get install -y gcc-arm-none-eabi
+
